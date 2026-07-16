@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jeremy W. Millar | Strategy to Execution</title>
+
+  <meta
+    name="description"
+    content="Jeremy W. Millar helps organizations turn complex priorities into practical plans, better decisions, and measurable execution."
+  >
+
+  <meta property="og:title" content="Jeremy W. Millar | Strategy to Execution">
+  <meta
+    property="og:description"
+    content="Selected strategy, transformation, business planning, and technology advisory work."
+  >
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --navy: #17324d;
+      --navy-dark: #0f2437;
+      --teal: #2a7f83;
+      --teal-light: #5aa5a8;
+      --ink: #1e2933;
+      --muted: #627282;
+      --line: #dce4e9;
+      --soft: #f4f7f9;
+      --pale: #eaf3f4;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(15, 36, 55, 0.1);
+      --radius: 18px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(220, 228, 233, 0.9);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--teal);
+    }
+
+    .hero {
+      padding: 100px 0 88px;
+      color: var(--white);
+      background:
+        radial-gradient(
+          circle at 85% 18%,
+          rgba(90, 165, 168, 0.25),
+          transparent 30%
+        ),
+        linear-gradient(135deg, var(--navy-dark), var(--navy));
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #bfe1e2;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(3.2rem, 8vw, 6.2rem);
+      line-height: 0.97;
+      letter-spacing: -0.055em;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 28px 0 0;
+      color: #dbe8ef;
+      font-size: clamp(1.08rem, 2vw, 1.35rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 19px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      color: var(--white);
+      background: var(--teal);
+      border-color: var(--teal);
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: -34px;
+    }
+
+    .stat {
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.45rem;
+      line-height: 1.2;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    section.alt {
+      background: var(--soft);
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 36px;
+    }
+
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--teal);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .case-study {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 30px;
+      padding: 34px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 8px 30px rgba(15, 36, 55, 0.06);
+    }
+
+    .case-study + .case-study {
+      margin-top: 26px;
+    }
+
+    .case-label {
+      margin-bottom: 12px;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+    }
+
+    .case-study h3 {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: 1.75rem;
+      letter-spacing: -0.025em;
+    }
+
+    .case-study p {
+      margin-top: 0;
+    }
+
+    .bullets {
+      display: grid;
+      gap: 10px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .bullets li {
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .bullets li::before {
+      content: "";
+      position: absolute;
+      top: 0.58em;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background: var(--teal);
+      border-radius: 50%;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      align-content: start;
+    }
+
+    .step {
+      min-height: 124px;
+      padding: 16px;
+      background: var(--pale);
+      border: 1px solid #cfe0e2;
+      border-radius: 14px;
+    }
+
+    .step b {
+      display: block;
+      color: var(--teal);
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+    }
+
+    .step span {
+      display: block;
+      margin-top: 7px;
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .step small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .capability {
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .capability h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+    }
+
+    .capability p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .method {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .method div {
+      padding: 22px;
+      background: var(--white);
+      border-top: 4px solid var(--teal);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .method strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--navy);
+    }
+
+    .quote {
+      padding: 42px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+      border-radius: 24px;
+    }
+
+    .quote p {
+      max-width: 950px;
+      margin: 0;
+      font-size: clamp(1.35rem, 2.4vw, 2.1rem);
+      line-height: 1.35;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .contact-box {
+      padding: 28px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+    }
+
+    .contact-box a {
+      color: var(--teal);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 34px 0;
+      color: #cbd8df;
+      background: var(--navy-dark);
+      font-size: 0.9rem;
+    }
+
+    .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .case-study,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .capability-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .method {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        width: min(100% - 32px, var(--max-width));
+      }
+
+      .hero {
+        padding: 78px 0 70px;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .stats,
+      .flow,
+      .capability-grid,
+      .method {
+        grid-template-columns: 1fr;
+      }
+
+      .case-study {
+        padding: 24px;
+      }
+
+      .step {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Jeremy W. Millar</div>
+
+    <nav aria-label="Main navigation">
+      <a href="#work">Selected Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">
+        Strategy · Transformation · Business Technology
+      </span>
+
+      <h1>Turning strategy into execution.</h1>
+
+      <p>
+        I help complex organizations clarify priorities, make better decisions,
+        and translate ideas into practical, measurable action.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#work">
+          View selected work
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="mailto:jeremy.millar@gmail.com"
+        >
+          Contact Jeremy
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap stats">
+    <div class="stat">
+      <strong>15+ years</strong>
+      <span>
+        Strategy, planning, transformation, and advisory experience
+      </span>
+    </div>
+
+    <div class="stat">
+      <strong>$10M+</strong>
+      <span>
+        Enterprise transformation portfolio governance experience
+      </span>
+    </div>
+
+    <div class="stat">
+      <strong>Cross-functional</strong>
+      <span>
+        Business, technology, operations, finance, and people
+      </span>
+    </div>
+
+    <div class="stat">
+      <strong>Hands-on</strong>
+      <span>
+        From executive framing through practical delivery
+      </span>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+
+      <div class="section-head">
+        <div class="kicker">Selected Work</div>
+
+        <h2>
+          How complex priorities become executable work.
+        </h2>
+
+        <p class="lead">
+          Engagement details have been generalized to respect organizational
+          confidentiality.
+        </p>
+      </div>
+
+      <article class="case-study">
+        <div>
+          <div class="case-label">CASE STUDY 01</div>
+
+          <h3>Strategy to Execution</h3>
+
+          <p>
+            A higher-education leadership team had important strategic and
+            operational priorities, but needed a clearer way to translate them
+            into initiatives, ownership, sequencing, governance, and
+            follow-through.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              Facilitated leadership and stakeholder sessions to clarify
+              priorities and desired outcomes.
+            </li>
+            <li>
+              Mapped strategic themes into a practical portfolio of initiatives.
+            </li>
+            <li>
+              Defined owners, dependencies, milestones, and decision points.
+            </li>
+            <li>
+              Introduced a repeatable planning, governance, and reporting
+              cadence.
+            </li>
+            <li>
+              Created a clearer foundation for budgeting, coordination, and
+              execution.
+            </li>
+          </ul>
+        </div>
+
+        <div class="flow">
+          <div class="step">
+            <b>01</b>
+            <span>Direction</span>
+            <small>Clarify desired outcomes and strategic intent.</small>
+          </div>
+
+          <div class="step">
+            <b>02</b>
+            <span>Priorities</span>
+            <small>Identify the few things that matter most.</small>
+          </div>
+
+          <div class="step">
+            <b>03</b>
+            <span>Initiatives</span>
+            <small>Convert priorities into defined work.</small>
+          </div>
+
+          <div class="step">
+            <b>04</b>
+            <span>Ownership</span>
+            <small>Assign accountable owners and contributors.</small>
+          </div>
+
+          <div class="step">
+            <b>05</b>
+            <span>Roadmap</span>
+            <small>Sequence work, dependencies, and decisions.</small>
+          </div>
+
+          <div class="step">
+            <b>06</b>
+            <span>Governance</span>
+            <small>Create practical tracking and review.</small>
+          </div>
+
+          <div class="step">
+            <b>07</b>
+            <span>Measures</span>
+            <small>Monitor progress and results.</small>
+          </div>
+
+          <div class="step">
+            <b>08</b>
+            <span>Action</span>
+            <small>Maintain momentum through execution.</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study">
+        <div>
+          <div class="case-label">CASE STUDY 02</div>
+
+          <h3>From Idea to Investment</h3>
+
+          <p>
+            Business leaders had legitimate technology needs, but early
+            requests often lacked clear problem definitions, value cases,
+            scope, delivery paths, and shared success measures. I acted as the
+            primary business partner during ideation and early planning.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              Managed a portfolio of incoming business and technology demand.
+            </li>
+            <li>
+              Converted requests into clear problem statements, outcomes, and
+              constraints.
+            </li>
+            <li>
+              Led discovery, stakeholder engagement, process mapping, and
+              requirements analysis.
+            </li>
+            <li>
+              Developed options, business cases, roadmaps, and prioritization
+              recommendations.
+            </li>
+            <li>
+              Preserved business intent through approval and delivery handoff.
+            </li>
+          </ul>
+        </div>
+
+        <div class="flow">
+          <div class="step">
+            <b>01</b>
+            <span>Intake</span>
+            <small>Capture the need and intended outcome.</small>
+          </div>
+
+          <div class="step">
+            <b>02</b>
+            <span>Discovery</span>
+            <small>Understand stakeholders and the current state.</small>
+          </div>
+
+          <div class="step">
+            <b>03</b>
+            <span>Definition</span>
+            <small>Clarify scope, requirements, and value.</small>
+          </div>
+
+          <div class="step">
+            <b>04</b>
+            <span>Options</span>
+            <small>Assess approaches, risks, and trade-offs.</small>
+          </div>
+
+          <div class="step">
+            <b>05</b>
+            <span>Priority</span>
+            <small>Compare fit, value, urgency, and effort.</small>
+          </div>
+
+          <div class="step">
+            <b>06</b>
+            <span>Approval</span>
+            <small>Prepare funding and decision materials.</small>
+          </div>
+
+          <div class="step">
+            <b>07</b>
+            <span>Handoff</span>
+            <small>Transfer intent and outcomes to delivery.</small>
+          </div>
+
+          <div class="step">
+            <b>08</b>
+            <span>Benefits</span>
+            <small>Track adoption, value, and results.</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study">
+        <div>
+          <div class="case-label">CASE STUDY 03</div>
+
+          <h3>Building Better Decisions</h3>
+
+          <p>
+            Leaders needed a more reliable view of portfolio health,
+            investment choices, operational performance, and emerging risk.
+            The work focused on turning fragmented data into concise,
+            decision-ready information.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              Defined the decisions and questions before designing the
+              reporting.
+            </li>
+            <li>
+              Created KPI scorecards, portfolio dashboards, and executive
+              summaries.
+            </li>
+            <li>
+              Improved visibility into progress, risk, value, dependencies, and
+              capacity.
+            </li>
+            <li>
+              Reduced reliance on manual reporting through repeatable data and
+              reporting practices.
+            </li>
+            <li>
+              Translated analysis into practical recommendations and next
+              actions.
+            </li>
+          </ul>
+        </div>
+
+        <div class="flow">
+          <div class="step">
+            <b>01</b>
+            <span>Questions</span>
+            <small>Start with the decisions leaders must make.</small>
+          </div>
+
+          <div class="step">
+            <b>02</b>
+            <span>Data</span>
+            <small>Identify reliable sources and definitions.</small>
+          </div>
+
+          <div class="step">
+            <b>03</b>
+            <span>Measures</span>
+            <small>Create meaningful KPIs and thresholds.</small>
+          </div>
+
+          <div class="step">
+            <b>04</b>
+            <span>Insights</span>
+            <small>Highlight patterns, risks, and trade-offs.</small>
+          </div>
+
+          <div class="step">
+            <b>05</b>
+            <span>Story</span>
+            <small>Present information clearly and concisely.</small>
+          </div>
+
+          <div class="step">
+            <b>06</b>
+            <span>Decision</span>
+            <small>Enable action, escalation, or investment.</small>
+          </div>
+
+          <div class="step">
+            <b>07</b>
+            <span>Follow-up</span>
+            <small>Track commitments and outcomes.</small>
+          </div>
+
+          <div class="step">
+            <b>08</b>
+            <span>Improve</span>
+            <small>Refine measures as needs evolve.</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study">
+        <div>
+          <div class="case-label">CASE STUDY 04</div>
+
+          <h3>Designing Better Ways of Working</h3>
+
+          <p>
+            Cross-functional work was slowed by unclear roles, inconsistent
+            processes, duplicated effort, and weak handoffs. The objective was
+            not simply to document a process, but to design a more effective
+            way of working.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              Assessed current-state processes, friction points, and decision
+              bottlenecks.
+            </li>
+            <li>
+              Defined future-state workflows, roles, accountabilities, and
+              governance.
+            </li>
+            <li>
+              Applied operating-model tools, including RACI and decision-rights
+              mapping.
+            </li>
+            <li>
+              Created templates, standards, and implementation plans that
+              teams could use.
+            </li>
+            <li>
+              Balanced consistency with the flexibility required by real-world
+              operations.
+            </li>
+          </ul>
+        </div>
+
+        <div class="flow">
+          <div class="step">
+            <b>01</b>
+            <span>Current State</span>
+            <small>Understand how the work is really done.</small>
+          </div>
+
+          <div class="step">
+            <b>02</b>
+            <span>Pain Points</span>
+            <small>Identify friction, delays, and duplication.</small>
+          </div>
+
+          <div class="step">
+            <b>03</b>
+            <span>Principles</span>
+            <small>Set clear design criteria.</small>
+          </div>
+
+          <div class="step">
+            <b>04</b>
+            <span>Future State</span>
+            <small>Redesign workflows and handoffs.</small>
+          </div>
+
+          <div class="step">
+            <b>05</b>
+            <span>Roles</span>
+            <small>Clarify ownership and decision rights.</small>
+          </div>
+
+          <div class="step">
+            <b>06</b>
+            <span>Governance</span>
+            <small>Create proportionate controls and cadence.</small>
+          </div>
+
+          <div class="step">
+            <b>07</b>
+            <span>Adoption</span>
+            <small>Support rollout, training, and use.</small>
+          </div>
+
+          <div class="step">
+            <b>08</b>
+            <span>Refine</span>
+            <small>Measure performance and improve.</small>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="capabilities" class="alt">
+    <div class="wrap">
+
+      <div class="section-head">
+        <div class="kicker">Capabilities</div>
+
+        <h2>
+          Broad enough to connect the pieces. Practical enough to move the work.
+        </h2>
+      </div>
+
+      <div class="capability-grid">
+        <div class="capability">
+          <h3>Strategic Planning</h3>
+          <p>
+            Priorities, scenarios, roadmaps, initiative portfolios, and
+            execution planning.
+          </p>
+        </div>
+
+        <div class="capability">
+          <h3>Business Transformation</h3>
+          <p>
+            Governance, operating models, cross-functional alignment, and
+            implementation.
+          </p>
+        </div>
+
+        <div class="capability">
+          <h3>Business Analysis</h3>
+          <p>
+            Problem framing, discovery, process mapping, requirements, and
+            options analysis.
+          </p>
+        </div>
+
+        <div class="capability">
+          <h3>Portfolio Governance</h3>
+          <p>
+            Demand intake, prioritization, investment decisions, reporting, and
+            benefits realization.
+          </p>
+        </div>
+
+        <div class="capability">
+          <h3>Technology Enablement</h3>
+          <p>
+            Business partnering, digital strategy, AI enablement, and solution
+            shaping.
+          </p>
+        </div>
+
+        <div class="capability">
+          <h3>Decision Support</h3>
+          <p>
+            Executive materials, KPI design, Power BI, dashboards, and data
+            storytelling.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap">
+
+      <div class="section-head">
+        <div class="kicker">My Approach</div>
+
+        <h2>
+          Bring structure without creating unnecessary bureaucracy.
+        </h2>
+      </div>
+
+      <div class="method">
+        <div>
+          <strong>Listen</strong>
+          <span>
+            Understand the context, stakeholders, and real constraints.
+          </span>
+        </div>
+
+        <div>
+          <strong>Simplify</strong>
+          <span>
+            Turn complexity into a clear problem and manageable choices.
+          </span>
+        </div>
+
+        <div>
+          <strong>Structure</strong>
+          <span>
+            Create a practical framework for decisions, ownership, and action.
+          </span>
+        </div>
+
+        <div>
+          <strong>Align</strong>
+          <span>
+            Build shared understanding across functions and levels.
+          </span>
+        </div>
+
+        <div>
+          <strong>Execute</strong>
+          <span>
+            Translate decisions into roadmaps, initiatives, and accountable
+            work.
+          </span>
+        </div>
+
+        <div>
+          <strong>Measure</strong>
+          <span>
+            Define evidence of progress, value, and outcomes.
+          </span>
+        </div>
+
+        <div>
+          <strong>Adapt</strong>
+          <span>
+            Refine the approach as evidence and priorities change.
+          </span>
+        </div>
+
+        <div>
+          <strong>Deliver</strong>
+          <span>
+            Maintain momentum until the work produces practical results.
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="quote">
+        <p>
+          I do my best work when the problem is ambiguous, the stakeholders
+          have different priorities, and leaders need someone who can create
+          clarity, build alignment, and move the work forward.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+
+      <div>
+        <div class="kicker">Contact</div>
+
+        <h2>
+          Turn the next complex priority into executable work.
+        </h2>
+
+        <p class="lead">
+          Strategy, transformation, business planning, technology enablement,
+          and operational improvement.
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <p>
+          <strong>Jeremy W. Millar</strong><br>
+          Toronto, Ontario, Canada
+        </p>
+
+        <p>
+          <a href="mailto:jeremy.millar@gmail.com">
+            jeremy.millar@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://www.linkedin.com/in/jeremymillar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/jeremymillar
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>Jeremy W. Millar</span>
+
+    <span>
+      Strategy · Transformation · Business Technology · Decision Support
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
